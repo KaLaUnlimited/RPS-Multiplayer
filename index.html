@@ -9,13 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <style type="text/css"></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
 </head>
 
 <body>
     <header class='text-center'>
         <h1>Rock Paper Scissors</h1>
-        <h4>Where imporotans decisions are made</h4></header>
+        <h4>Where important decisions are made</h4></header>
     <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6 text-center" >
+                <div class="playerChecker">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control"  placeholder="Player name" id="playerName">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2" id="playerSubmit" >Start</button>
+                    </div>
+                </form>
+		</div>
+            </div>
+        </div>
         <!-- row -->
         <div class="row">
             <div class="col-md-4 text-center" id="playerOne" style="background-color: blue">
@@ -23,31 +41,38 @@
                 <div id="rock1">Rock</div>
                 <div id="paper1">Paper</div>
                 <div id="scissors">Scissors</div>
-                
             </div>
-            <div class="col-md-4 text-center" id=playerOne"" style="background-color: orange">
-               			game area
-                    
-             </div>
+            <div class="col-md-4 text-center" id="winner " style="background-color: orange">
+                game area
+            </div>
             <div class="col-md-4 text-center" style="background-color: pink">
-            		player two
-            		<div id="rock1">Rock</div>
+                player two
+                <div id="rock1">Rock</div>
                 <div id="paper1">Paper</div>
                 <div id="scissors">Scissors</div>
             </div>
         </div>
-<!-- row -->
-	<div class="row">
-		<div class="col-md-6">
-        <div class="chatBox" style="background-color: beige">
-        	chat box here
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chatBox wells" style="background-color: beige">
+                    <input type="text" class="form-control"  id="playerName">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2" id="chatSubmit" >chat</button>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+            	<div class="col-md-6 wells">
+            		
+            	</div>
+            </div>
         </div>
-        </div>
-        </div>
-
         <!-- end of container -->
     </div>
-    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
 </body>
 
 </html>
